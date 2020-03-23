@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+  html {
+    box-sizing: border-box;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    overflow: hidden;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.display-none, .only-desktop{
+    display: none;
+}
+
+
+@media (min-width: 900px){
+    .phone-page{
+        display: none
+    }
+}
+
+
+input,
+label,
+select,
+button,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	
+	font-size:13px;
+	font-family:Arial;
+}
+
+input:focus
+{
+	outline:0;
+}
+
+input,
+textarea
+{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+input[type=checkbox],
+input[type=radio]
+{
+	width:13px;
+	height:13px;
+}
+
+input[type=search]
+{
+	-webkit-appearance:textfield;
+	-webkit-box-sizing:content-box;
+}
+
+::-webkit-search-decoration
+{
+	display:none;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"]
+{
+	overflow:visible;
+	width:auto;
+}
+
+::-webkit-file-upload-button
+{	
+	padding:0;
+	border:0;
+	background:none;
+}
+
+textarea 
+{
+	vertical-align:top;
+	overflow:auto;
+}
+
+
+select[multiple] 
+{
+	vertical-align:top;
+}

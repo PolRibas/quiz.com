@@ -1,0 +1,122 @@
+.login-section, .signup-section{
+    width: 100vw;
+    height: 100px;
+    min-height:100vh;
+    overflow: scroll;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    .logo{
+        height: 20vh;
+        min-height: 100px;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        color: $white;
+        font-size: 29px;
+        margin-bottom: 30px;
+    }
+    .login-form{
+        height: 50vh;
+        min-height: 400px;
+        background: $white;
+        border-radius: 10px;
+    }
+    .signup-form{
+        height: 70vh;
+        min-height: 400px;
+    }
+    .signup-form, .login-form{
+        width: 90vw;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 20px;
+        form{
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            justify-content: center;
+            h2{
+                color: $lightpurple;
+            }
+            label{
+                margin-top: 15px;
+                font-size: 14px;
+                text-align: left;
+                width: 280px;
+                transition: 0.5 ease-in-out;
+                color: $purple;
+            }
+            input{
+                color: $lightpurple;
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $lightpurple;
+                padding: 5px;
+                font-size: 14px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            input[type=submit]{
+                width: 100px;
+                background: $lightpurple;
+                color: $white;
+                padding: 3px;
+                @include pagesShadows;
+                margin: auto;
+                margin-bottom: 0px;
+                margin-top: 25px;
+            }
+        }
+    }
+    .login-link{
+        height: 10vh;
+        min-height: 100px;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        p{
+            color: $white;
+            font-size: 14px;
+            a{
+                color: $yellow;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.signup-section{
+    background: $white;
+    top: 100vh;
+    overflow: scroll;
+    .login-link{
+        p{
+            color: $testimonialsBlack;
+            a{
+                color: $lightpurple;
+            }
+        }
+    }
+}
+.position-two{
+    transform: translateY(-100vh);
+    transition: 0.5s ease-in-out;
+    overflow: scroll;
+}

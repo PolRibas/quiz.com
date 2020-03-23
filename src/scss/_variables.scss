@@ -1,0 +1,129 @@
+$green: #6aad9f;
+$red: #ff6161;
+$yellow: #ffe300;
+$blue: #69dbf5;
+$purple: #3b064d;
+$pink: #f5387a;
+$black: #3a364d;
+$white: #fcfcfc;
+$testimonialsBlack: #30444c;
+$lightpurple: #5102b3;
+
+.yellow-svg{fill:$yellow;}
+.black-svg{fill:$testimonialsBlack;}
+.red-svg{fill:$red;}
+.green-svg{fill:$green}
+.black{fill:black}
+.white{fill:white}
+
+$marginTopheader: 52px;
+
+@mixin pagesShadows {
+    -webkit-box-shadow: -6px 0px 23px -14px $white;
+    -moz-box-shadow: -6px 0px 23px -14px $white;
+    box-shadow: -6px 0px 23px -14px $white;
+}
+
+@mixin noneShadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.admin-button{
+    position: fixed;
+    background: $white;
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+    color: $purple;
+    bottom: 0;
+    text-decoration: none;
+    z-index: 0;
+    @include pagesShadows();
+    h3{
+        margin: 0;
+    }
+}
+
+html{
+    background: $purple;
+    margin: auto;
+}
+
+@mixin button-reset {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+@media (min-width: 360px){
+    .onlyphone {
+        display: block;
+    }
+    .onlyipad {
+        display: none;
+    }
+    .onlydesktop {
+        display: none;
+    }
+}
+
+@media (min-width: 500px){
+    .onlyphone {
+        display: none;
+    }
+    .onlyipad {
+        display: block;
+    }
+    .onlydesktop {
+        display: none;
+    }
+}
+
+@media (min-width: 980px){
+    .onlyphone {
+        display: none;
+    }
+    .onlyipad {
+        display: none;
+    }
+    .onlydesktop {
+        display: block;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+    *, *:before, *:after {
+    box-sizing: inherit;
+}
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.display-none{
+    display: none;
+}
+
+@media (max-width: 350px){
+    html{
+        max-width: 100vw;
+    }
+}
